@@ -10,9 +10,25 @@ Here are some graphs which have been implemented by using matplotlib:
 #### * Pie Chart:
 With these two lines of code we are able to create a pie-chart that shows us the distribution of different fruits.
 
+```python
+plt.pie(quantity, labels = fruit, autopct'%0.1f%%'
+        ,colours=['yellow', 'grey', 'blue', 'black'])
+        
+plt.show
+```
+
 #### * Bar-Chart:
 Here we are creating a bar-chart using a dictionary. The ‘keys’ of dictionary are stored in ‘names’ and the ‘values’ are stored separately. Then, using plt.bar() method, we map the names onto the x-axis and scores of the students onto the y-axis.
 
-
+```python
+student = {"Bob":87,"Matt":56,"Sam":27} 
+names = list(student.keys()) 
+values = list(student.values()) 
+plt.bar(names,values) 
+plt.title("Bar Plot") 
+plt.xlabel("Names") 
+plt.ylabel("Marks") 
+plt.grid(True)
+```
 
 These were just a few graphs with matplotlib. Using this library, you can make box-plots, scatter-plots, doughnut charts, heatmaps and a lot more.
